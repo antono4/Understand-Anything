@@ -1,0 +1,25 @@
+# Jekyll configuration for GitHub Pages
+# This file tells Jekyll not to process certain files
+
+exclude:
+  - index.html
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - tsconfig.json
+  - node_modules
+  - packages
+  - scripts
+  - homepage
+  - understand-anything
+  - .claude-plugin
+  - .copilot-plugin
+  - .cursor-plugin
+  - .github
+  - assets
+  - docs
+  - READMEs
+
+keep_files:
+  - .git
+  - .gitignore
