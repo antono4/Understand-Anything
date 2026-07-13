@@ -1,8 +1,13 @@
 # Jekyll configuration for GitHub Pages
 # This file tells Jekyll not to process certain files
 
-exclude:
+# Don't process index.html - serve it as-is
+include:
   - index.html
+  - .nojekyll
+
+# Exclude everything else
+exclude:
   - package.json
   - package-lock.json
   - pnpm-lock.yaml
@@ -12,14 +17,25 @@ exclude:
   - scripts
   - homepage
   - understand-anything
+  - understand-anything-plugin
   - .claude-plugin
   - .copilot-plugin
   - .cursor-plugin
   - .github
+  - .git
   - assets
   - docs
   - READMEs
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - install.ps1
+  - install.sh
+  - eslint.config.mjs
+  - _config.yml
 
-keep_files:
-  - .git
-  - .gitignore
+# Disable Jekyll processing
+safe: true
+lsi: false
+future: false
+show_drafts: false
+
