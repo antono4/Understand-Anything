@@ -1,0 +1,357 @@
+# Instincts generated from https://github.com/antono4/Understand-Anything
+# Generated: 2026-07-13T03:21:16.361Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Understand-Anything-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: Implement Understand-Anything - Transform codebases into interactive knowledge graphs
+
+---
+id: Understand-Anything-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Commit Length
+
+## Action
+
+Write moderate-length commit messages (~91 characters)
+
+## Evidence
+
+- Average commit message length: 91 chars
+- Based on 1 commits
+
+---
+id: Understand-Anything-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Understand-Anything-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Understand-Anything-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Understand-Anything-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: Understand-Anything-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/antono4/Understand-Anything
+---
+
+# Understand Anything Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: understand-anything-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: understand-anything-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: understand-anything-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: understand-anything-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: understand-anything-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: understand-anything-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: understand-anything-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with a 'feat' prefix for features
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Example: 'feat: Implement Understand-Anything...'
+
+---
+id: understand-anything-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.5
+domain: git
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Commit Length
+
+## Action
+
+Aim for a commit message length around 91 characters
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: understand-anything-instinct-error-handling
+trigger: "When handling potential errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Error Handling
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style
+
+---
+id: understand-anything-instinct-test-location
+trigger: "When adding or organizing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Test Location
+
+## Action
+
+Place tests in a separate location from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: understand-anything-instinct-module-organization
+trigger: "When organizing code modules"
+confidence: 0.7
+domain: architecture
+source: repo-analysis
+source_repo: antono4/Understand-Anything
+---
+
+# Understand Anything Instinct Module Organization
+
+## Action
+
+Organize modules by type
+
+## Evidence
+
+- Pattern in architecture.moduleOrganization
+
